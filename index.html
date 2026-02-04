@@ -20,17 +20,31 @@
 </head>
 <body>
     <h1>OneAnswerAI - Privacy Policy</h1>
-    <p class="updated">Last updated: January 31, 2026</p>
+    <p class="updated">Last updated: February 4, 2026</p>
 
     <h2>Overview</h2>
     <p>OneAnswerAI is committed to protecting your privacy. This policy explains what data we collect and how we use it.</p>
 
     <h2>Data We Collect</h2>
     <p><strong>Device Identifier:</strong> We generate a SHA256 hash of your device's unique identifier for authentication purposes. This hash is anonymous and cannot be used to identify you personally.</p>
-    <p><strong>Queries:</strong> Your questions are sent to OpenAI's API for processing. These queries are not stored on our servers.</p>
+    <p><strong>Queries:</strong> Your questions are sent simultaneously to three AI providers: OpenAI (GPT-4o-mini), Google Gemini (Gemini 2.0 Flash), and Anthropic Claude (Claude 3 Haiku). The responses are fused into a single optimized answer. Queries are not permanently stored on our servers.</p>
+
+    <h2>Server-Side Data</h2>
+    <p>To manage quotas and subscriptions, we store the following data on our server (PostgreSQL hosted on Render):</p>
+    <ul>
+        <li>Anonymous device hash</li>
+        <li>Subscription tier</li>
+        <li>Daily query counter</li>
+        <li>Purchased query credits</li>
+        <li>Subscription status and expiration date</li>
+    </ul>
+    <p>No personally identifiable information is stored.</p>
 
     <h2>Data Stored Locally</h2>
     <p><strong>Conversation History:</strong> Your chat history is stored only on your device. We do not have access to this data.</p>
+
+    <h2>In-App Purchases & Subscriptions</h2>
+    <p>OneAnswerAI offers auto-renewable subscriptions (Weekly Pro at $5.99/week, Monthly Pro at $17.00/month) and consumable query packs. All payments are processed entirely by Apple through the App Store. We do not collect or store any payment information.</p>
 
     <h2>Data We Do NOT Collect</h2>
     <ul>
@@ -38,10 +52,17 @@
         <li>Location data</li>
         <li>Contacts</li>
         <li>Analytics or tracking data</li>
+        <li>Payment or financial information</li>
     </ul>
 
     <h2>Third-Party Services</h2>
-    <p><strong>OpenAI:</strong> We use OpenAI's API to process your queries. OpenAI's privacy policy applies to data processed by their services. Visit <a href="https://openai.com/privacy">openai.com/privacy</a> for details.</p>
+    <p>We use the following third-party services to provide our functionality:</p>
+    <ul>
+        <li><strong>OpenAI:</strong> AI query processing. <a href="https://openai.com/privacy">openai.com/privacy</a></li>
+        <li><strong>Google Gemini:</strong> AI query processing. <a href="https://ai.google.dev/terms">ai.google.dev/terms</a></li>
+        <li><strong>Anthropic Claude:</strong> AI query processing. <a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a></li>
+        <li><strong>Render:</strong> Server hosting. <a href="https://render.com/privacy">render.com/privacy</a></li>
+    </ul>
 
     <h2>Data Security</h2>
     <p>All communications between the app and our servers use HTTPS encryption. Authentication tokens are stored securely in your device's Keychain.</p>
@@ -54,6 +75,8 @@
 
     <h2>Contact</h2>
     <p>For privacy concerns, contact: <a href="mailto:m8seven@icloud.com">m8seven@icloud.com</a></p>
+
+    <p>See also our <a href="terms.html">Terms of Service</a>.</p>
 
     <p style="margin-top: 50px; color: #888;">© 2026 Valentino Paulon. All rights reserved.</p>
 </body>
