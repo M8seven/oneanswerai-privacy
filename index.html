@@ -21,15 +21,16 @@
 </head>
 <body>
     <h1>OneAnswerAI - Privacy Policy</h1>
-    <p class="updated">Last updated: February 2026</p>
+    <p class="updated">Last updated: May 28, 2026</p>
     <p><strong>Developer:</strong> Valentino Paulon</p>
 
     <h2>Overview</h2>
     <p>OneAnswerAI is committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights regarding your information.</p>
 
     <h2>Data We Collect</h2>
-    <p><strong>Device Identifier:</strong> We generate a SHA256 hash of your device's unique identifier for JWT authentication purposes. This hash is anonymous, non-reversible, and cannot be used to identify you personally.</p>
-    <p><strong>Query Text:</strong> Your questions are sent to three AI providers — OpenAI (GPT-4o-mini), Google Gemini (Gemini 2.0 Flash), and Anthropic Claude (Claude 3 Haiku) — for processing. The responses are fused into a single optimized answer. Queries are not permanently stored on our servers.</p>
+    <p><strong>Device Identifier:</strong> We generate a SHA256 hash of your device's unique identifier for authentication purposes. This hash is anonymous, non-reversible, and cannot be used to identify you personally. You can use OneAnswerAI anonymously with this identifier alone.</p>
+    <p><strong>Account Data (optional):</strong> If you choose to create an account, we collect and store your email address, an optional display name, and either a securely hashed password or, for social sign-in, an identifier provided by Apple or Google. Account data is used for authentication, account recovery, cross-device sync, and transactional emails (such as email verification and password reset). Creating an account is optional — the app is fully usable in anonymous mode.</p>
+    <p><strong>Query Text:</strong> Your questions are sent to third-party AI providers for processing. The responses may be fused into a single optimized answer. Queries are not permanently stored on our servers.</p>
     <p><strong>Media Files:</strong> PDF documents and images you submit are sent temporarily to AI providers for analysis. These files are not persisted on our servers and are discarded after processing.</p>
 
     <h2>Server-Side Data</h2>
@@ -40,38 +41,56 @@
         <li>Daily query counter</li>
         <li>Purchased query credits</li>
         <li>Subscription expiration date</li>
+        <li>Account data (email, optional display name, hashed password or social sign-in identifier) — only if you create an account</li>
     </ul>
-    <p>No personally identifiable information is stored.</p>
+    <p>If you use the app anonymously, no personally identifiable information is stored. If you create an account, the only personal data we store is what is listed above.</p>
 
     <h2>Data Stored Locally</h2>
     <p><strong>Conversation History:</strong> Your chat history is stored only on your device using local storage. We do not have access to this data.</p>
 
     <h2>Data We Do NOT Collect</h2>
     <ul>
-        <li>Personal information (name, email, phone number)</li>
+        <li>Phone number</li>
         <li>Location data</li>
         <li>Contacts</li>
-        <li>Analytics or tracking data</li>
+        <li>Advertising or cross-site tracking data</li>
         <li>Cookies</li>
-        <li>Payment or financial information</li>
+        <li>Payment or financial information (handled entirely by Apple)</li>
     </ul>
 
-    <h2>Third-Party Services</h2>
-    <p>We use the following third-party services to provide our functionality:</p>
+    <h2>Third-Party Data Processors (GDPR Art. 28)</h2>
+    <p>Your queries, uploaded media, and certain technical data may be transmitted to the following third-party processors for the purposes described:</p>
+
+    <h3>AI Processing Providers</h3>
     <ul>
-        <li><strong>OpenAI API:</strong> AI query processing — <a href="https://openai.com/privacy">openai.com/privacy</a></li>
-        <li><strong>Google Gemini API:</strong> AI query processing — <a href="https://ai.google.dev/terms">ai.google.dev/terms</a></li>
-        <li><strong>Anthropic Claude API:</strong> AI query processing — <a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a></li>
+        <li><strong>OpenAI, Inc.</strong> — AI query processing — <a href="https://openai.com/privacy" target="_blank" rel="noopener">openai.com/privacy</a></li>
+        <li><strong>Anthropic PBC</strong> — AI query processing — <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a></li>
+        <li><strong>Google LLC</strong> — AI query processing (Gemini API) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li><strong>DeepSeek, Inc.</strong> — AI query processing — <a href="https://chat.deepseek.com/privacy" target="_blank" rel="noopener">chat.deepseek.com/privacy</a></li>
+        <li><strong>NVIDIA Corporation</strong> — AI query processing (NIM API) — <a href="https://www.nvidia.com/privacy-center" target="_blank" rel="noopener">nvidia.com/privacy-center</a></li>
+    </ul>
+    <p>Which provider is used at any given moment may vary based on your subscription tier and operational factors.</p>
+
+    <h3>Service Infrastructure</h3>
+    <ul>
         <li><strong>Apple App Store:</strong> In-app purchases and subscriptions</li>
-        <li><strong>Google AdMob:</strong> Rewarded video ads (free tier only) — <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
-        <li><strong>Render:</strong> Server hosting — <a href="https://render.com/privacy">render.com/privacy</a></li>
+        <li><strong>Render:</strong> Server hosting (PostgreSQL database, API) — <a href="https://render.com/privacy" target="_blank" rel="noopener">render.com/privacy</a></li>
+        <li><strong>RevenueCat:</strong> Subscription validation and IAP receipt processing — <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
+        <li><strong>Brave Search:</strong> Web search API (when web search feature is used) — <a href="https://brave.com/privacy/browser/" target="_blank" rel="noopener">brave.com/privacy</a></li>
+        <li><strong>Sentry:</strong> Error tracking and performance monitoring — <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">sentry.io/privacy</a></li>
+        <li><strong>Resend:</strong> Transactional email (verification, password reset) — <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">resend.com/legal/privacy-policy</a></li>
+        <li><strong>Expo Push Notifications:</strong> Push notification delivery — <a href="https://expo.dev/privacy" target="_blank" rel="noopener">expo.dev/privacy</a></li>
+        <li><strong>Google AdMob:</strong> Rewarded video ads (free tier only) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
     </ul>
 
     <h2>In-App Purchases &amp; Subscriptions</h2>
-    <p>OneAnswerAI offers auto-renewable subscriptions (Weekly Pro at $5.99/week, Monthly Pro at $17.00/month) and consumable query packs. All payments are processed entirely by Apple through the App Store. We do not collect or store any payment information. You can manage or cancel subscriptions in iOS Settings &gt; [Your Name] &gt; Subscriptions.</p>
+    <p>OneAnswerAI offers auto-renewable subscriptions (Weekly Pro at $5.99/week, Monthly Pro at $17.99/month) and consumable query packs. All payments are processed entirely by Apple through the App Store. We do not collect or store any payment information. You can manage or cancel subscriptions in iOS Settings &gt; [Your Name] &gt; Subscriptions.</p>
 
     <h2>Data Security</h2>
     <p>All communications between the app and our servers use HTTPS encryption. Authentication tokens are stored securely in your device's Keychain.</p>
+
+    <h2>Data Retention &amp; Account Deletion</h2>
+    <p>Account data is retained for as long as your account remains active. You can permanently delete your account and all associated server-side data at any time from within the app (Settings &gt; Account &gt; Delete Account), or by contacting us at the email below. Deletion is irreversible and removes your account data, quota records, and synced content. Anonymous device records are automatically pruned after extended inactivity.</p>
 
     <h2>Children's Privacy</h2>
     <p>OneAnswerAI is not intended for children under 13 years of age. We do not knowingly collect data from children.</p>
