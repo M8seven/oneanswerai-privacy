@@ -21,7 +21,7 @@
 </head>
 <body>
     <h1>OneAnswerAI - Privacy Policy</h1>
-    <p class="updated">Last updated: September 27, 2026</p>
+    <p class="updated">Last updated: November 12, 2026</p>
     <p><strong>Developer:</strong> Valentino Paulon</p>
 
     <h2>Overview</h2>
@@ -33,7 +33,7 @@
     <h2>Data We Collect</h2>
     <p><strong>Device Identifier:</strong> your device generates a random UUID (via the OS's secure random generator — not a hash derived from any personal identifier) for authentication and quota tracking. If you create an account, this identifier is linked to it. If you make a purchase or watch a rewarded ad, it (or your account identifier) is shared with RevenueCat and Google AdMob to validate purchases and deliver ads. You can use OneAnswerAI anonymously with this identifier alone.</p>
     <p><strong>Account Data (optional):</strong> If you choose to create an account, we collect and store your email address, an optional display name, and either a securely hashed password or, for social sign-in, an identifier provided by Apple or Google. Account data is used for authentication, account recovery, cross-device sync, and transactional emails (such as email verification and password reset). Creating an account is optional — the app is fully usable in anonymous mode.</p>
-    <p><strong>Query Text:</strong> Your questions are sent to third-party AI providers for processing. The responses may be fused into a single optimized answer. To detect and fix problems, we keep a diagnostic log of each question and of the answer we returned (the text, whether it succeeded, the language, the app version and which AI models answered) for 30 days, after which it is deleted automatically. We keep it on the basis of our legitimate interest in keeping the service working; only the developer can access it, and it is never used for advertising or to train AI models. If you have an account, your full conversations (titles and messages) are also synced to our servers for cross-device access.</p>
+    <p><strong>Query Text:</strong> Your questions are sent to third-party AI providers for processing. The responses may be fused into a single optimized answer. To detect and fix problems, we keep a diagnostic log of each question and of the answer we returned (the text, whether it succeeded, the language, the app version and which AI models answered) for 30 days, after which it is deleted automatically. We keep it on the basis of our legitimate interest in keeping the service working; only the developer can access it, and it is never used for advertising or to train AI models. Separately, to compare and improve answer quality, we also keep for up to 90 days a limited record of the individual answers returned by each AI provider; only the developer can access it and it is never used for advertising or to train AI models. If you have an account, your full conversations (titles and messages) are also synced to our servers for cross-device access.</p>
     <p><strong>Media Files:</strong> PDF documents and images you submit are sent to AI providers for analysis. For the same diagnostic purpose we keep a copy in private, access-restricted storage for 30 days, then delete it automatically. We never keep images or documents sent by users who declared an age between 13 and 17.</p>
 
     <h2>Server-Side Data</h2>
@@ -61,6 +61,44 @@
     <h2>Advertising &amp; Diagnostics</h2>
     <p><strong>Advertising (free tier only):</strong> The free tier shows rewarded video ads and banner ads served by Google AdMob. AdMob accesses your device's advertising identifier (the Advertising ID on Android and the Identifier for Advertisers (IDFA) on iOS) to deliver and measure ads. On iOS, before any tracking takes place we present Apple's App Tracking Transparency (ATT) prompt: if you allow tracking, AdMob may deliver personalized ads using your advertising identifier; if you decline (or have not granted permission), AdMob serves only non-personalized, contextual ads. Paid subscribers do not see ads. Apple and Google's advertising identifiers are user-resettable and can be limited from your device's privacy settings.</p>
     <p><strong>Diagnostics &amp; Crash Reporting:</strong> We use Sentry to collect crash reports and basic diagnostic and performance data (such as error logs, device model, and operating system version) so we can detect and fix problems. This data is used solely to improve the app's stability and is not used for advertising.</p>
+
+    <h2>Web App (app.one-answer-ai.com)</h2>
+    <p>OneAnswerAI can also be used in a browser at app.one-answer-ai.com. Everything in this policy applies to the web app as well. This section describes what is different there.</p>
+
+    <h3>What is stored in your browser</h3>
+    <p>The web app does not set cookies. It keeps the following in your browser's local storage, on your device:</p>
+    <ul>
+      <li><strong>A device identifier:</strong> a random ID created on your first visit, used to apply the free daily limit and to prevent abuse.</li>
+      <li><strong>Your sign-in session:</strong> the tokens that keep you signed in, if you have an account.</li>
+      <li><strong>Your conversations:</strong> up to 200 conversations, as text. Images and files you attach are not kept in local storage.</li>
+      <li><strong>Your settings:</strong> appearance preferences and the result of the age check (an age range and country). The date of birth you enter is used once for that check and is not stored.</li>
+      <li><strong>Short-lived technical values:</strong> the time of your free question when you use the app without an account, and a one-time code used to complete an email sign-in link, which expires after 24 hours.</li>
+    </ul>
+    <p>You can remove all of this at any time by clearing the site data for app.one-answer-ai.com in your browser. Because this storage is used only to run the app and remember your own preferences, and never for advertising or tracking, the web app does not show a cookie banner.</p>
+
+    <h3>Using the web app without an account</h3>
+    <p>If you use the web app without signing in, your conversations stay in your browser and are not saved to our servers as conversation history. Our server receives each question in order to answer it and records your device identifier with a usage count to apply the free limit. The diagnostic log described under "Advertising &amp; Diagnostics" applies to questions asked on the web in the same way as in the mobile app.</p>
+    <p>If you later create an account in the same browser, the conversations stored in that browser are uploaded to your new account so that you can keep them.</p>
+    <p>Without an account we cannot identify you, so we cannot look up or delete server-side records on request; the diagnostic records linked to a device identifier are deleted automatically after the retention period stated in this policy.</p>
+
+    <h3>Signing in on the web</h3>
+    <p>You can sign in with Google, with Apple, with an email address and password, or with a sign-in link sent to your email.</p>
+    <ul>
+      <li><strong>Google:</strong> we receive your Google account identifier, email address, name and profile picture.</li>
+      <li><strong>Apple:</strong> we receive your Apple account identifier and, if you choose to share them, your name and email address (which may be an Apple private relay address). We keep an encrypted Apple token whose only use is to revoke the connection when you delete your account.</li>
+      <li><strong>Email and password:</strong> we store your email address and a one-way hash of your password, never the password itself.</li>
+      <li><strong>Sign-in links, verification and password reset:</strong> these emails are sent through our email provider, which receives your email address for that purpose.</li>
+    </ul>
+    <p>When you sign in, Google or Apple load their own sign-in components in your browser and may set their own cookies on their own domains under their own privacy policies. Each sign-in also records your device identifier and the fact that you used the web app.</p>
+
+    <h3>Advertising and analytics on the web</h3>
+    <p>The web app shows no ads and contains no advertising SDK, no third-party analytics and no tracking scripts. Fonts are served from our own domain. Crash and error monitoring runs on our servers only, as described above, and can include errors raised while handling a request from the web app.</p>
+
+    <h3>Which AI providers receive a question asked on the web</h3>
+    <p>The same as in the mobile app: questions on the free plan are answered primarily by Google Gemini, with OpenAI or Anthropic Claude as a fallback if it is unavailable, and questions from subscribers can be sent to OpenAI, Google Gemini and Anthropic Claude. Images and PDF files you attach are processed by Google Gemini or Anthropic Claude.</p>
+
+    <h3>Your data and your rights on the web</h3>
+    <p>If you have an account, the account page of the web app lets you download a copy of your data and delete your account. Deleting your account removes your profile, synced conversations, preferences and sessions from our servers, revokes the Apple connection if you used it, and deletes the diagnostic records linked to your account and to the devices you signed in on. Conversations saved to your account are kept until you delete them or delete your account.</p>
 
     <h2>Data We Do NOT Collect</h2>
     <ul>
@@ -90,9 +128,11 @@
         <li><strong>RevenueCat:</strong> Subscription validation and IAP receipt processing — <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
         <li><strong>Google Search (via Gemini grounding):</strong> live web results when the web search feature is used — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
         <li><strong>Sentry:</strong> Error tracking and performance monitoring — <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">sentry.io/privacy</a></li>
-        <li><strong>Resend:</strong> Transactional email (verification, password reset) — <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">resend.com/legal/privacy-policy</a></li>
+        <li><strong>Resend:</strong> Transactional email (verification, password reset, sign-in links) — <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">resend.com/legal/privacy-policy</a></li>
         <li><strong>Expo Push Notifications:</strong> Push notification delivery — <a href="https://expo.dev/privacy" target="_blank" rel="noopener">expo.dev/privacy</a></li>
         <li><strong>Google AdMob:</strong> Rewarded video ads and banner ads (free tier only) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li><strong>Cloudflare:</strong> hosting of the web app and network proxy in front of our API (processes your IP address and request metadata) — <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></li>
+        <li><strong>Google and Apple (sign-in):</strong> authentication when you choose to sign in with them — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>, <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></li>
     </ul>
     <p><strong>International Data Transfers:</strong> OneAnswerAI is developed in Italy (EU/EEA). Several processors we use — including OpenAI, Anthropic, Render, RevenueCat, Sentry, Resend, Expo, and Google/AdMob — are based in, or transfer data to, the United States or other countries outside the EEA. Where required, we rely on the EU-U.S. Data Privacy Framework (for processors certified under it) or the European Commission's Standard Contractual Clauses to protect data transferred internationally.</p>
 
@@ -104,7 +144,7 @@
 
     <h2>Data Retention &amp; Account Deletion</h2>
     <p>Account data is retained for as long as your account remains active. You can permanently delete your account and all associated server-side data at any time from within the app (Settings &gt; Account &gt; Delete Account), or by contacting us at the email below. Deletion is irreversible and permanently removes your profile, conversations, preferences, custom instructions, feedback, content reports, receipts, and quota/subscription records; purchase records associated with your account (transaction identifiers and amounts only, personal identifiers removed) may be retained for accounting purposes. Diagnostic question logs and the attached files described above are deleted automatically after 30 days, and immediately if you delete your account; they are included in your data export.</p>
-    <p><strong>Your Rights (GDPR/CCPA):</strong> if you are in the EEA, UK, or a US state with similar protections, you have the right to access, correct, delete, or export your personal data (see above), and to object to or restrict certain processing. You can exercise these rights from within the app or by contacting us at the email below. If you are in the EU/EEA, you also have the right to lodge a complaint with your local data protection authority (in Italy, the Garante per la protezione dei dati personali, www.garanteprivacy.it).</p>
+    <p><strong>Your Rights (GDPR/CCPA):</strong> if you are in the EEA, UK, or a US state with similar protections, you have the right to access, correct, delete, or export your personal data, and to object to or restrict certain processing. Account holders can export a copy of their data in JSON format from within the app. You can exercise these rights from within the app or by contacting us at the email below. If you are in the EU/EEA, you also have the right to lodge a complaint with your local data protection authority (in Italy, the Garante per la protezione dei dati personali, www.garanteprivacy.it).</p>
 
     <h2>Children's Privacy</h2>
     <p>OneAnswerAI is intended for users 13 years of age or older. If you are in Italy, independent use requires you to be at least 14 years old; a user under 14 in Italy may use the app only with a parent's or legal guardian's confirmed consent. AI image-editing features are restricted to users 18 and older. The app asks for your age range during setup; we do not yet use an OS-level age-verification signal such as Apple's or Google's Age Signals API, so age is self-declared.</p>
